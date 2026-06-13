@@ -3,32 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="臺灣地震預警系統的演進與發展，GitHub Pages 純靜態可視版本。">
-<meta name="deploy-check" content="universal-static-visible-2026-06-13-v3-refresh">
-<title>臺灣地震預警系統的演進與發展</title>
+<meta name="description" content="臺灣地震預警系統的演進與發展：依 2026/06/12 嘉義災防宣導簡報整理的互動網頁。">
+<meta name="deploy-check" content="chiayi-eews-briefing-redesign-2026-06-13-v1">
+<title>臺灣地震預警系統的演進與發展｜嘉義災防宣導</title>
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;background:#0f172a;color:#e5e7eb;line-height:1.7}main{max-width:980px;margin:auto;padding:32px 20px}h1{font-size:clamp(2rem,6vw,4rem);line-height:1.12;margin:8px 0 16px}.tag{display:inline-block;padding:6px 12px;border:1px solid #38bdf8;border-radius:999px;color:#7dd3fc}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0}.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px}.btn{display:inline-block;background:#38bdf8;color:#082f49;text-decoration:none;font-weight:700;padding:12px 16px;border-radius:12px;margin:6px 8px 6px 0}a{color:#bae6fd}img{max-width:100%;height:auto;border-radius:16px;border:1px solid rgba(255,255,255,.18);box-shadow:0 18px 50px rgba(0,0,0,.35)}small{color:#94a3b8}.warn{background:#fbbf24;color:#422006;border-radius:12px;padding:12px 14px;font-weight:700}
+:root{--bg:#07111f;--panel:#10233a;--panel2:#132f4f;--text:#e6f2ff;--muted:#9fc1df;--line:rgba(255,255,255,.14);--cyan:#38bdf8;--amber:#fbbf24;--green:#34d399;--red:#fb7185}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Segoe UI",sans-serif;background:radial-gradient(circle at 15% 0,#17466b 0,#07111f 42%,#030712 100%);color:var(--text);line-height:1.72}a{color:#b9e8ff}.wrap{max-width:1180px;margin:auto;padding:0 20px}.hero{min-height:84vh;display:grid;align-items:center;padding:72px 0 44px}.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(56,189,248,.55);background:rgba(56,189,248,.12);color:#b6edff;border-radius:999px;padding:7px 13px;font-weight:700}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center}.hero h1{font-size:clamp(2.15rem,6vw,5rem);line-height:1.05;margin:18px 0 16px;letter-spacing:-.04em}.lead{font-size:clamp(1.05rem,2.2vw,1.38rem);color:#d6eaff;max-width:780px}.meta{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.pill{border:1px solid var(--line);background:rgba(255,255,255,.07);border-radius:999px;padding:8px 12px;color:#d9efff}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border-radius:14px;padding:13px 17px;font-weight:800;border:1px solid rgba(255,255,255,.18);background:#38bdf8;color:#06243a}.btn.secondary{background:rgba(255,255,255,.08);color:#e6f2ff}.cover{position:relative;border-radius:28px;overflow:hidden;background:rgba(255,255,255,.07);border:1px solid var(--line);box-shadow:0 30px 90px rgba(0,0,0,.38)}.cover img{display:block;width:100%;height:auto}.cover:after{content:"50 頁完整簡報";position:absolute;right:14px;bottom:14px;background:rgba(3,7,18,.75);border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-weight:800}.section{padding:58px 0;border-top:1px solid rgba(255,255,255,.08)}.section h2{font-size:clamp(1.75rem,3.6vw,3rem);line-height:1.15;margin:0 0 12px}.section>p,.section .intro{color:var(--muted);font-size:1.06rem;max-width:860px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:26px}.card{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.045));border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 18px 55px rgba(0,0,0,.18)}.card strong{font-size:1.08rem}.num{font-size:2rem;font-weight:900;color:#7dd3fc;line-height:1}.small{color:var(--muted);font-size:.95rem}.chapters{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:24px}.chapter{display:block;text-decoration:none;color:var(--text);padding:14px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid var(--line);min-height:110px}.chapter span{display:block;color:#7dd3fc;font-weight:900}.timeline{position:relative;margin:28px 0 0;padding-left:24px}.timeline:before{content:"";position:absolute;left:7px;top:4px;bottom:4px;width:2px;background:linear-gradient(var(--cyan),var(--green))}.event{position:relative;margin:0 0 18px;padding:16px 18px;background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:18px}.event:before{content:"";position:absolute;left:-23px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px rgba(56,189,248,.18)}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}.list{margin:0;padding-left:1.2rem}.list li{margin:.35rem 0}.notice{border-left:5px solid var(--amber);background:rgba(251,191,36,.12);padding:16px 18px;border-radius:16px;color:#ffefbd}.slides-head{display:flex;justify-content:space-between;gap:18px;align-items:end;flex-wrap:wrap;margin-bottom:18px}.tools{display:flex;gap:10px;flex-wrap:wrap}.tools input{min-width:220px;background:#061525;border:1px solid var(--line);border-radius:12px;color:var(--text);padding:11px 12px}.slide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}.slide-card{overflow:hidden;border-radius:18px;background:rgba(255,255,255,.065);border:1px solid var(--line)}.slide-card img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover;background:#d8edf7}.slide-card div{padding:12px}.slide-card b{display:block}.tag{display:inline-block;border-radius:999px;padding:4px 9px;background:rgba(56,189,248,.13);color:#a9e9ff;font-size:.82rem;font-weight:800;margin-bottom:6px}.footer{padding:42px 0 60px;color:#9fb8cc;border-top:1px solid rgba(255,255,255,.08)}@media(max-width:900px){.hero-grid,.two{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.chapters{grid-template-columns:repeat(2,1fr)}.hero{padding-top:42px}}@media(max-width:560px){.cards,.chapters{grid-template-columns:1fr}.tools input{width:100%}.btn{width:100%;justify-content:center}.wrap{padding:0 16px}}
 </style>
 </head>
 <body>
+<header class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div>
+      <span class="badge">中央氣象署地震測報中心｜嘉義災防宣導</span>
+      <h1>臺灣地震預警系統的演進與發展</h1>
+      <p class="lead">從臺灣地震環境、強震即時警報、海嘯警報，到 AI 現地型預警與最後一哩路應變整備，整理成可快速瀏覽、可逐頁對照的互動網頁。</p>
+      <div class="meta">
+        <span class="pill">講者：陳達毅 科長</span>
+        <span class="pill">50 頁簡報內容保留</span>
+        <span class="pill">嘉義縣政府 115 年度講習</span>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#summary">看重點整理</a>
+        <a class="btn secondary" href="#slides">瀏覽完整簡報</a>
+        <a class="btn secondary" href="slides/slide-01.jpg">開啟第 1 頁原圖</a>
+      </div>
+    </div>
+    <figure class="cover">
+      <img src="slides/slide-01.jpg" alt="簡報封面：臺灣地震預警系統的演進與發展" onerror="this.onerror=null;this.src='public/slides/slide-01.jpg';">
+    </figure>
+  </div>
+</header>
+
 <main>
-<span class="tag">CWA Earthquake Early Warning</span>
-<h1>臺灣地震預警系統的演進與發展</h1>
-<p class="warn">如果你看到這段文字，代表 GitHub Pages 已經成功顯示內容。</p>
-<p>這是純靜態修正版首頁，不依賴 React、Vite、npm 或 JavaScript build。內容包含中央氣象署地震測報中心簡報、50 頁圖文、7 個章節與地震預警重點。</p>
-<p>
-<a class="btn" href="slides/slide-01.jpg">開啟第 1 頁（部署版）</a>
-<a class="btn" href="public/slides/slide-01.jpg">開啟第 1 頁（原始檔）</a>
-<a class="btn" href="slides/slide-50.jpg">開啟第 50 頁（部署版）</a>
-<a class="btn" href="public/slides/slide-50.jpg">開啟第 50 頁（原始檔）</a>
-</p>
-<div class="grid">
-<section class="card"><h2>50 頁簡報</h2><p>完整保留原始簡報圖文內容。</p></section>
-<section class="card"><h2>7 個章節</h2><p>涵蓋臺灣地震環境、強震即時警報、海嘯警報、應變整備與 AI 現地型預警。</p></section>
-<section class="card"><h2>可視優先</h2><p>本頁已移除會造成白畫面的前端依賴，優先確保網址一定有內容。</p></section>
-</div>
-<img src="slides/slide-01.jpg" alt="第 1 頁簡報：臺灣地震預警系統的演進與發展" onerror="this.onerror=null;this.src='public/slides/slide-01.jpg';">
-<p><small>部署檢查標記：universal-static-visible-2026-06-13-v3-refresh</small></p>
+<section class="section wrap" id="summary">
+  <h2>一頁掌握簡報核心</h2>
+  <p class="intro">這份簡報以「與地震波賽跑」為主軸，說明臺灣地震頻繁的環境背景、地震中心 24 小時作業、即時觀測網與強震即時警報發布邏輯，並延伸到深震、誤報、漏報、海嘯警報與防災教育。</p>
+  <div class="cards">
+    <article class="card"><div class="num">7–8cm</div><strong>板塊每年聚合</strong><p class="small">菲律賓海板塊與歐亞大陸板塊持續碰撞，是臺灣地震頻繁的重要背景。</p></article>
+    <article class="card"><div class="num">100</div><strong>每天約百個地震</strong><p class="small">臺灣地震活動密集，每年約有百個顯著有感地震，需要長期監測與應變。</p></article>
+    <article class="card"><div class="num">7秒</div><strong>警報發布時效</strong><p class="small">歷經測站布建、演算法革新與加密觀測，強震警報發布時效已大幅縮短。</p></article>
+    <article class="card"><div class="num">4500+</div><strong>直送需求單位</strong><p class="small">地震速報資訊可送達學校、公路、軌道與防救災單位，支援第一線應變。</p></article>
+  </div>
+</section>
+
+<section class="section wrap" id="chapters">
+  <h2>章節導覽</h2>
+  <p class="intro">依照簡報順序重整為 7 個主題，點選可快速跳到對應重點。</p>
+  <div class="chapters">
+    <a class="chapter" href="#race"><span>01</span>競速開始<br><small>921、0403 與逐秒震度</small></a>
+    <a class="chapter" href="#risk"><span>02</span>地震環境與風險<br><small>板塊、災害地震、嘉南案例</small></a>
+    <a class="chapter" href="#center"><span>03</span>地震中心與觀測網<br><small>24 小時作業與巨量資料</small></a>
+    <a class="chapter" href="#eew"><span>04</span>強震即時警報<br><small>P 波、S 波與發布管道</small></a>
+    <a class="chapter" href="#limits"><span>05</span>科技極限與海嘯<br><small>深震、誤漏報、海嘯警報</small></a>
+    <a class="chapter" href="#preparedness"><span>06</span>最後一哩路整備<br><small>教育、交通、學校、災防單位</small></a>
+    <a class="chapter" href="#ai"><span>07</span>AI 與未來精進<br><small>現地型預警與公私協力</small></a>
+  </div>
+</section>
+
+<section class="section wrap" id="race">
+  <h2>01｜與地震波賽跑</h2>
+  <div class="two">
+    <div class="card"><strong>從 921 到 0403</strong><p>簡報先以 1999 年 921 集集地震與 2024 年 4 月 3 日花蓮地震作為對照，呈現災害情境下「速度」的重要性。</p></div>
+    <div class="card"><strong>逐秒觀測震度</strong><p>強震災害不只看最大震度，也必須同時考慮持續時間；逐秒震度有助於補強警報判斷。</p></div>
+  </div>
+</section>
+
+<section class="section wrap" id="risk">
+  <h2>02｜臺灣的地震環境與風險</h2>
+  <p class="intro">臺灣位在板塊交界，東部、南部海域都有隱沒與碰撞構造；簡報並列出 1900 年以來重大災害地震，以及近十年美濃、花蓮、池上、大埔等案例。</p>
+  <div class="timeline">
+    <div class="event"><strong>2010 甲仙地震</strong><br><span class="small">嘉南地區災害性地震案例之一。</span></div>
+    <div class="event"><strong>2016 美濃地震</strong><br><span class="small">造成臺南維冠大樓倒塌等重大災損。</span></div>
+    <div class="event"><strong>2024 花蓮地震</strong><br><span class="small">強震即時警報與海嘯警報實例皆以此為重要案例。</span></div>
+    <div class="event"><strong>2025 大埔地震</strong><br><span class="small">嘉南地區近年受關注的災害地震。</span></div>
+  </div>
+</section>
+
+<section class="section wrap" id="center">
+  <h2>03｜地震測報中心工作環境</h2>
+  <div class="cards">
+    <article class="card"><div class="num">60</div><strong>約 60 位員工</strong><p class="small">地震測報中心採 24 小時作業、全年無休。</p></article>
+    <article class="card"><div class="num">24/7</div><strong>即時監看</strong><p class="small">地震發生時，值班同仁可立刻掌握震央、震度與影響區域。</p></article>
+    <article class="card"><div class="num">3000</div><strong>觀測頻道</strong><p class="small">即時地震觀測網接收大量連續資料。</p></article>
+    <article class="card"><div class="num">100Hz</div><strong>高頻取樣</strong><p class="small">每個頻道接收 100Hz 取樣率資料，支援秒級判斷。</p></article>
+  </div>
+</section>
+
+<section class="section wrap" id="eew">
+  <h2>04｜強震即時警報如何爭取秒數</h2>
+  <div class="two">
+    <div class="card"><strong>警報原理</strong><p>地震發生時會同時產生 P 波與 S 波。P 波速度較快、震幅較小；S 波速度較慢但破壞力較大。若能利用 P 波快速估算地震大小並傳送訊息，就可能在災害性震波抵達前爭取應變時間。</p></div>
+    <div class="card"><strong>發布管道</strong><ul class="list"><li>國家級警報與手機細胞廣播</li><li>電視臺插播、網路推播與 App</li><li>地震報告、震度速報與氣象署官網</li><li>特定單位的簡訊、LINE Notify 與防救災通報</li></ul></div>
+  </div>
+  <p class="notice">重點：警報不是「預測地震」，而是在地震已發生後，利用快波資訊搶在主要破壞性震波抵達前發出提醒。</p>
+</section>
+
+<section class="section wrap" id="limits">
+  <h2>05｜科技極限與複合型災害</h2>
+  <div class="cards">
+    <article class="card"><strong>深震</strong><p class="small">深層地震可能造成較廣範圍影響，警報估算與實際震度分布更具挑戰。</p></article>
+    <article class="card"><strong>誤報</strong><p class="small">短時間多事件或特殊訊號條件，可能造成判讀誤差，需要系統持續精進。</p></article>
+    <article class="card"><strong>漏報</strong><p class="small">若兩個地震相差僅數秒，系統可能先處理第一個事件，導致後續較大事件未能完整掌握。</p></article>
+    <article class="card"><strong>海嘯</strong><p class="small">需考慮地震規模、震源深度、海床垂直錯動、海底地形與警戒分區。</p></article>
+  </div>
+  <div class="two">
+    <div class="card"><strong>臺灣海嘯威脅</strong><p>簡報列出臺灣東部琉球海溝、東南部亞普海溝、南部馬尼拉海溝等潛在威脅來源。</p></div>
+    <div class="card"><strong>海嘯警戒分區與波高分級</strong><p>臺灣依海嘯威脅、海底地形與行政區域劃分 6 個警戒分區，並以 0 至 3 級呈現預估波高。</p></div>
+  </div>
+</section>
+
+<section class="section wrap" id="preparedness">
+  <h2>06｜掌握關鍵應變與整備</h2>
+  <p class="intro">地震資訊的價值在於「最後一哩路」能否轉化為行動。簡報列出學校、道路、軌道、災防單位與民眾教育等應用情境。</p>
+  <div class="cards">
+    <article class="card"><strong>師生緊急庇護</strong><p class="small">地震速報可協助高中小學啟動避難與演練。</p></article>
+    <article class="card"><strong>公路封路依據</strong><p class="small">公路局、高公局可依震度資訊進行巡查與管制判斷。</p></article>
+    <article class="card"><strong>軌道系統應變</strong><p class="small">臺鐵、高鐵、捷運可將地震資訊接入營運安全流程。</p></article>
+    <article class="card"><strong>防災教育宣導</strong><p class="small">地震 3 步驟：趴下、掩護、穩住；海嘯則需理解警報、警訊與消息差異。</p></article>
+  </div>
+</section>
+
+<section class="section wrap" id="ai">
+  <h2>07｜AI 現地型預警與未來精進</h2>
+  <div class="two">
+    <div class="card"><strong>機器學習估算震度</strong><p>簡報後段呈現以機器學習模型從地震波形萃取特徵、分類並輸出震度預估的演算邏輯，目標是在地震初期快速評估影響。</p></div>
+    <div class="card"><strong>公私協力、多管道傳遞</strong><p>未來精進方向包括 AI 現地型預警、發布精細化，以及與 App 業者、智慧家居、交通運輸、科技業、防災系統整合商等共同合作。</p></div>
+  </div>
+</section>
+
+<section class="section wrap" id="slides">
+  <div class="slides-head">
+    <div><h2>完整 50 頁簡報瀏覽</h2><p class="intro">每張圖可點開原始頁面。搜尋可輸入「海嘯」「AI」「花蓮」「嘉南」「警報」等關鍵字。</p></div>
+    <div class="tools"><input id="q" type="search" placeholder="搜尋頁面標題或關鍵字"></div>
+  </div>
+  <div class="slide-grid" id="slideGrid"></div>
+</section>
 </main>
+
+<footer class="footer wrap">
+  <p><strong>資料來源：</strong>「2026_0612_嘉義災防宣導－臺灣地震預警系統的演進與發展」簡報，中央氣象署地震測報中心。</p>
+  <p>部署檢查標記：chiayi-eews-briefing-redesign-2026-06-13-v1</p>
+  <p><a href="#top">回到頁首</a></p>
+</footer>
+
+<script>
+const slides=[
+['封面：臺灣地震預警系統的演進與發展','封面 陳達毅 嘉義縣政府 講習'],['在地震中心工作面臨的挑戰','挑戰 媒體 地震中心'],['競速開始：921 與 0403','921 集集 花蓮 競速'],['競速開始：0403 花蓮地震','花蓮 地震 震度'],['逐秒觀測震度輔助預警','逐秒 震度 EEW'],['臺灣地震環境與風險','板塊 聚合 隱沒'],['GNSS 絕對水平速度場','GNSS 速度場'],['臺灣地震環境與風險：災害地震','每天100 每年100'],['臺灣地震活動統計','地震 活動 頻率'],['過去 10 年災害地震','美濃 花蓮 池上 大埔'],['嘉南地區災害地震：甲仙','嘉南 甲仙'],['嘉南地區災害地震：美濃','嘉南 美濃 維冠'],['嘉南地區災害地震：大埔','嘉南 大埔'],['地震測報中心工作環境','24小時 全年無休'],['地震測報中心監控設備','監控 值班'],['地震監測畫面','監測 震度 快報'],['即時地震觀測網：巨量資料','3000 頻道 100Hz'],['強震即時警報原理','P波 S波'],['強震警報發布條件與管道','國家級警報 管道'],['強震即時警報：0403 花蓮','花蓮 強震'],['國家級警報','手機 細胞廣播'],['網路推播與電視臺推播','網路 電視'],['警報時效從 102 秒到 7 秒','102秒 7秒 盲區'],['科技極限：深震','深震'],['科技極限：誤報','誤報 國家級警報'],['誤報案例細節','誤報 雲嘉南'],['短時間雙震造成誤報','雙震 誤報'],['短時間雙震造成漏報','漏報 雙震'],['漏報波形案例','漏報 波形'],['複合型災害：海嘯','海嘯 南亞 日本'],['臺灣海嘯威脅','琉球海溝 亞普 馬尼拉'],['海嘯警報作業','分區 波高 分級'],['海嘯警報範例','海嘯 報序'],['海嘯警報實例：0403 花蓮','海嘯 花蓮'],['海嘯警報實例：堪察加 M8.8','海嘯 堪察加'],['最後一哩路','地震報告 App LINE'],['直送防救災需求單位','學校 公路 軌道'],['防救災單位整備流程','EOC 交通 維生'],['防災教育宣導：地震 3 步驟','趴下 掩護 穩住'],['國家防災日與校園宣導','919 防災日'],['海嘯預警與警報差異','海嘯 警報 警訊 消息'],['Q&A：民間 APP 是否較快','APP 村里廣播'],['地震預警系統演算邏輯','機器學習 AI'],['AI 模型與 P 波 leading time','AI P波'],['機器學習實際案例','LINE Notify AI'],['逐秒觀測震度 0403','逐秒 花蓮'],['初期觀測震度評估警報','AI 觀測震度'],['結語：持續精進速警報效能','AI 現地型 精細化'],['結語：公私協力合作','公私協力 多管道'],['謝謝聆聽','結尾 感謝']
+];
+function imgPath(n){return 'slides/slide-'+String(n).padStart(2,'0')+'.jpg'}
+function fallbackPath(n){return 'public/slides/slide-'+String(n).padStart(2,'0')+'.jpg'}
+function render(filter=''){
+ const q=filter.trim().toLowerCase();
+ const grid=document.getElementById('slideGrid');
+ grid.innerHTML='';
+ slides.forEach((s,i)=>{
+  const n=i+1, text=(s[0]+' '+s[1]).toLowerCase();
+  if(q && !text.includes(q)) return;
+  const a=document.createElement('a');a.className='slide-card';a.href=imgPath(n);a.target='_blank';a.rel='noopener';
+  a.innerHTML=`<img loading="lazy" src="${imgPath(n)}" alt="第 ${n} 頁：${s[0]}" onerror="this.onerror=null;this.src='${fallbackPath(n)}';"><div><span class="tag">第 ${n} 頁</span><b>${s[0]}</b><p class="small">${s[1]}</p></div>`;
+  grid.appendChild(a);
+ });
+}
+document.getElementById('q').addEventListener('input',e=>render(e.target.value));
+render();
+</script>
 </body>
 </html>
