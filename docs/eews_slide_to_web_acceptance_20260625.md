@@ -22,7 +22,9 @@
 - [x] 已建立 AI-WorkHub 規格文件
 - [x] 已建立 AI-WorkHub Agent job
 - [x] 已建立 AI-WorkHub 初步 log
+- [x] 已建立 AI-WorkHub 最終報告
 - [x] 已建立 repo 內驗收清單
+- [x] 已建立 repo 內最終報告
 
 ## 3. 驗收狀態
 
@@ -34,6 +36,7 @@
 - [x] 確認 repo 具有 `package.json` 與 Vite build script
 - [x] 建立最終報告文件
 - [x] 建立 GitHub issue 追蹤
+- [x] 建立 GitHub / Drive 雙份最終報告
 
 ### 需要外部執行環境完成或複核
 
@@ -143,6 +146,6 @@ cp -R public/slides/. _site/slides/
 
 ## 8. 結論
 
-截至 2026-06-25，已完成 ChatGPT 可直接執行的 GitHub 與 Google Drive 任務：建立任務卡、規格、Agent job、log、GitHub issue、repo 驗收文件、50 張 slide 圖片存在性驗證與最終報告。
+截至 2026-06-25，已完成 ChatGPT 可直接執行的 GitHub 與 Google Drive 任務：建立任務卡、規格、Agent job、log、GitHub issue、repo 驗收文件、repo 最終報告、Drive 最終報告、50 張 slide 圖片存在性驗證。
 
 需要具備 Node.js / browser / GitHub Actions 執行環境的項目，已明確列為外部執行環境待複核項目。
